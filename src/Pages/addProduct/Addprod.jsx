@@ -67,37 +67,6 @@ const AddProd = () => {
     });
   };
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   if (
-  //     name === "productName" ||
-  //     name === "productType" ||
-  //     name === "description"
-  //   ) {
-  //     // String validation
-  //     if (!/^[a-zA-Z\s]*$/.test(value)) {
-  //       alert(
-  //         `Please enter a valid ${name}. Only letters and spaces are allowed.`
-  //       );
-  //       return;
-  //     }
-  //   } else if (
-  //     name === "price" ||
-  //     name === "discountPrice" ||
-  //     name === "stock"
-  //   ) {
-  //     // Number validation
-  //     if (!/^\d+$/.test(value)) {
-  //       alert(`Please enter a valid ${name}. Only numbers are allowed.`);
-  //       return;
-  //     }
-  //   }
-
-  //   setProduct((prevProduct) => ({
-  //     ...prevProduct,
-  //     [name]: value,
-  //   }));
-  // };
 
   const handleRemoveImage = (index) => {
     const updatedImages = [...product.images];
@@ -178,8 +147,8 @@ const AddProd = () => {
       product,
       {
         headers: {
-          token:
-            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZWxsZXJfaWQiOiI2NWNhMDRiYmRjMjU5YzZiOWRiMmYwMTkiLCJpYXQiOjE3MDk3OTk2NTEsImV4cCI6MTcxMDA1ODg1MX0.9SijfeYphtbzD6VHOlLtnS7MlPb8VEty4FuJYFTi_QU",
+          token:`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZWxsZXJfaWQiOiI2NjAzYjgyNWIzODBhOWYzNDM0YWU2NzUiLCJpYXQiOjE3MTE2MTM5NjksImV4cCI6MTcxMTg3MzE2OX0.cWPmNtrVV94SbcOufJktyxlALT2JPgolkl6RZLMW0z4`,
+            // localStorage.getItem("sellerauthToken"),
           "Content-Type": "multipart/form-data",
           // "Content-Type": "application/json",
         },
@@ -528,3 +497,37 @@ const AddProd = () => {
 };
 
 export default AddProd;
+
+
+
+// const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   if (
+  //     name === "productName" ||
+  //     name === "productType" ||
+  //     name === "description"
+  //   ) {
+  //     // String validation
+  //     if (!/^[a-zA-Z\s]*$/.test(value)) {
+  //       alert(
+  //         `Please enter a valid ${name}. Only letters and spaces are allowed.`
+  //       );
+  //       return;
+  //     }
+  //   } else if (
+  //     name === "price" ||
+  //     name === "discountPrice" ||
+  //     name === "stock"
+  //   ) {
+  //     // Number validation
+  //     if (!/^\d+$/.test(value)) {
+  //       alert(`Please enter a valid ${name}. Only numbers are allowed.`);
+  //       return;
+  //     }
+  //   }
+
+  //   setProduct((prevProduct) => ({
+  //     ...prevProduct,
+  //     [name]: value,
+  //   }));
+  // };

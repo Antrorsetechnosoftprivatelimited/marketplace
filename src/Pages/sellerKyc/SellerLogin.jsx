@@ -49,7 +49,7 @@ const SellerLogin = () => {
           console.log(res.data.result);
           if (res.data.responseCode === 200) {
             toast.success(res.data.responseMessage);
-            localStorage.setItem("authToken", res.data.result);
+            localStorage.setItem("sellerauthToken", res.data.result);
             // Dispatch to Redux store if needed
 
             dispatch(auth(true));

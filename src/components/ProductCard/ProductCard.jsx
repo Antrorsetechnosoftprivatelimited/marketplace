@@ -83,28 +83,6 @@ const ProductCard = ({ product, inCart, inWishlist }) => {
     toast.error(message);
   };
 
-  // const handleCartClick = () => {
-  //   if (inCart) {
-  //     removeItemFromCart(product);
-  //     alertCartItemRemoved("Item removed from cart!");
-  //   } else {
-  //     addItemToCart(product);
-  //     alertCartItemAdded("Item added to cart!");
-  //   }
-  // };
-
-  // const handleWishlistClick = () => {
-  //   if (inWishlist) {
-  //     removeItemFromWishlist(product);
-  //     alertCartItemRemoved("Item removed from whislist!");
-  //   } else {
-  //     addItemToWishlist(product);
-  //     alertCartItemAdded("Item added to wishlist!");
-  //   }
-  // };
-
-
-
   const handleCartClick = () => {
     if (inCart) {
 
@@ -213,15 +191,15 @@ const ProductCard = ({ product, inCart, inWishlist }) => {
           <div className="mt-2 mb-5 flex items-center justify-between gap-4 ">
             <p className="flex gap-2 items-end">
               <span className="text-2xl font-bold text-slate-900">
-                &#8377;449
+                &#8377;{product?.price}
               </span>
               <span className="text-sm text-slate-900 line-through">
-                &#8377;699
+                &#8377;{product?.mrp}
               </span>
             </p>
             <div className=" flex items-center">
-              <StarRating rating={product.ratingAVG} />
-              <span>{`${product.count ?? `(0)`}`}</span>
+              <StarRating rating={product?.ratingAVG} />
+              <span>{`${product?.count ?? `(0)`}`}</span>
             </div>
           </div>
 

@@ -300,15 +300,15 @@ const Checkout = () => {
                     <div
                       key={index}
                       className={` flex flex-row-reverse rounded-md items-center justify-between px-2 ring-1 ring-gray-400 cursor-pointer ${
-                        selectedAddress === add._id
+                        selectedAddress === add?._id
                           ? "ring-2 ring-gray-700"
                           : ""
                       }`}
-                      onClick={() => setSelectedAddress(add._id)}
+                      onClick={() => setSelectedAddress(add?._id)}
                     >
                       <span
                         className={`box-content block h-3 w-3 rounded-full border-8 border-gray-300 bg-white ${
-                          selectedAddress === add._id
+                          selectedAddress === add?._id
                             ? "ring-2 ring-gray-700"
                             : "peer-checked:ring-2 peer-checked:ring-gray-700"
                         }`}
@@ -316,16 +316,16 @@ const Checkout = () => {
 
                       <div>
                         <span className="font-semibold text-sm">
-                          {`${add.house} ${add.city} `}
+                          {`${add?.house} ${add?.city} `}
                         </span>
                         <p className="text-slate-500 text-sm leading-6">
-                          {address.deliveryTime}
+                          {address?.deliveryTime}
                         </p>
                       </div>
                     </div>
                   ))}
 
-                  {address.length === 2 ? (
+                  {address?.length === 2 ? (
                     ""
                   ) : (
                     <span className=" ring-1 rounded-md flex items-center justify-center p-0">
