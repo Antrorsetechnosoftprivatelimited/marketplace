@@ -143,7 +143,7 @@ const ProductDetail = () => {
     async function fetchData() {
       try {
         const response = await fetch(
-          `http://localhost:3687/app/product/getProductByIdWithRating/${productId}`
+          `${import.meta.env.VITE_BACKEND_URL}/app/product/getProductByIdWithRating/${productId}`,
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
