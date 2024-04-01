@@ -13,25 +13,21 @@ const ImageList = [
     id: 1,
     img: Image1,
     title: "Special Sale",
-    description: "From Rs.1999 or Rs.3999.",
-    description2: "From Rs.1999 or Rs.3999.",
+    description: "Starting from Rs.175.",
   },
   {
     id: 2,
     img: Image2,
     title: "Special Sale",
-    description: "From 1999 or 3999.",
-    description2: "From Rs.1999 or Rs.3999.",
+    description: "Starting from Rs.175.",
   },
- 
+
   {
     id: 3,
     img: Image4,
     title: "Special Sale",
-    description: "From 1999 or 3999.",
-    description2: "From Rs.1999 or Rs.3999.",
+    description: "Starting from Rs.175.",
   },
-
 ];
 
 const Hero = () => {
@@ -81,17 +77,21 @@ const Hero = () => {
           Sale of the month
         </p>
         <h3 className="text-xl md:text-3xl font-semibold pb-1 ">
-          Fashion for Men
+          Sambrani Mini Cup
         </h3>
-        <p className="text-sm font-sans">From Rs.29999</p>
+        <p className="text-sm font-sans">From Rs.125</p>
       </div>
       <div className="side-image1 bg-cover bg-center bg-no-repeat rounded-lg min-h-40 sm:p-10 hidden sm:block">
-        <h3 className="text-lg lg:text-xl font-semibold">Smart Watch 7</h3>
-        <p className="text-sm font-sans">From Rs.29999</p>
+        <h3 className="text-lg lg:text-xl font-semibold">
+          Electric Camphor Difuser
+        </h3>
+        <p className="text-sm font-sans">From Rs.499</p>
       </div>
       <div className="side-image2 bg-cover bg-center bg-no-repeat rounded-lg min-h-40 sm:p-10 hidden sm:block">
-        <h3 className="text-lg lg:text-xl font-semibold ">AirPods Max</h3>
-        <p className="text-sm font-sans">From Rs.29999</p>
+        <h3 className="text-lg lg:text-xl font-semibold ">
+          Metallic Agarbatti
+        </h3>
+        <p className="text-sm font-sans">From Rs.175</p>
       </div>
     </div>
   );

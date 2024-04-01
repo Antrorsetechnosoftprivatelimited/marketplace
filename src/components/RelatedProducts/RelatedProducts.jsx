@@ -1,12 +1,12 @@
 import React from "react";
-import image1 from "../../assets/images/product-1.jpg"
-import image2 from "../../assets/images/product-2.jpg"
-import image3 from "../../assets/images/product-3.jpg"
-import image4 from "../../assets/images/product-4.jpg"
-import image5 from "../../assets/images/product-15.png"
-import image6 from "../../assets/images/product-16.png"
-import image7 from "../../assets/images/product-17.png"
-import image8 from "../../assets/images/product-18.png"
+import image1 from "../../assets/images/product-1.jpg";
+import image2 from "../../assets/images/product-2.jpg";
+import image3 from "../../assets/images/product-3.jpg";
+import image4 from "../../assets/images/product-4.jpg";
+import image5 from "../../assets/images/product-15.png";
+import image6 from "../../assets/images/product-16.png";
+import image7 from "../../assets/images/product-17.png";
+import image8 from "../../assets/images/product-18.png";
 
 const RelatedProducts = () => {
   const location = window.location.pathname;
@@ -24,19 +24,21 @@ const RelatedProducts = () => {
             class="h-72 w-72 object-cover rounded-t-xl"
           />
           <div class="px-4 py-3 w-72">
-            <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+            <span class="text-gray-400 mr-3 uppercase text-xs">
+              Metallic Agarbatti(100GM)
+            </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+              Raatrani
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹149
+                ₹175
               </p>
               <del>
                 <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
               </del>
-              {
-                location === "/" ? null : <div class="ml-auto">
+              {location === "/" ? null : (
+                <div class="ml-auto">
                   <a
                     href="#"
                     className="flex justify-center px-2 py-2 text-blue-600 border border-blue-300 rounded-md hover:bg-blue-700 hover:text-gray-100 dark:hover:bg-gray-800 dark:hover:border-gray-900"
@@ -44,8 +46,7 @@ const RelatedProducts = () => {
                     Add to cart
                   </a>
                 </div>
-              }
-
+              )}
             </div>
           </div>
         </a>
@@ -61,19 +62,21 @@ const RelatedProducts = () => {
             class="h-72 w-72 object-cover rounded-t-xl"
           />
           <div class="px-4 py-3 w-72">
-            <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+            <span class="text-gray-400 mr-3 uppercase text-xs">
+              Metallic Dhoop Stick(100GM)
+            </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+              Lavender
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹149
+                ₹175
               </p>
               <del>
                 <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
               </del>
-              {
-                location === "/" ? null : <div class="ml-auto">
+              {location === "/" ? null : (
+                <div class="ml-auto">
                   <a
                     href="#"
                     className="flex justify-center px-2 py-2 text-blue-600 border border-blue-300 rounded-md hover:bg-blue-700 hover:text-gray-100 dark:hover:bg-gray-800 dark:hover:border-gray-900"
@@ -81,7 +84,7 @@ const RelatedProducts = () => {
                     Add to cart
                   </a>
                 </div>
-              }
+              )}
             </div>
           </div>
         </a>
@@ -97,19 +100,21 @@ const RelatedProducts = () => {
             class="h-72 w-72 object-cover rounded-t-xl"
           />
           <div class="px-4 py-3 w-72">
-            <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+            <span class="text-gray-400 mr-3 uppercase text-xs">
+              Metallic Dhoop Stick(100GM)
+            </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+              Rose
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹149
+                ₹175
               </p>
               <del>
                 <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
               </del>
-              {
-                location === "/" ? null : <div class="ml-auto">
+              {location === "/" ? null : (
+                <div class="ml-auto">
                   <a
                     href="#"
                     className="flex justify-center px-2 py-2 text-blue-600 border border-blue-300 rounded-md hover:bg-blue-700 hover:text-gray-100 dark:hover:bg-gray-800 dark:hover:border-gray-900"
@@ -117,7 +122,7 @@ const RelatedProducts = () => {
                     Add to cart
                   </a>
                 </div>
-              }
+              )}
             </div>
           </div>
         </a>
@@ -133,19 +138,21 @@ const RelatedProducts = () => {
             class="h-72 w-72 object-cover rounded-t-xl"
           />
           <div class="px-4 py-3 w-72">
-            <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+            <span class="text-gray-400 mr-3 uppercase text-xs">
+              Metallic Dhoop Cone(100GM)
+            </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+              Dhoop Cone(Pack of 5)
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹149
+                ₹875
               </p>
               <del>
-                <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
+                <p class="text-sm text-gray-600 cursor-auto ml-2">₹999</p>
               </del>
-              {
-                location === "/" ? null : <div class="ml-auto">
+              {location === "/" ? null : (
+                <div class="ml-auto">
                   <a
                     href="#"
                     className="flex justify-center px-2 py-2 text-blue-600 border border-blue-300 rounded-md hover:bg-blue-700 hover:text-gray-100 dark:hover:bg-gray-800 dark:hover:border-gray-900"
@@ -153,7 +160,7 @@ const RelatedProducts = () => {
                     Add to cart
                   </a>
                 </div>
-              }
+              )}
             </div>
           </div>
         </a>
@@ -166,19 +173,21 @@ const RelatedProducts = () => {
             class="h-72 w-72 object-cover rounded-t-xl"
           />
           <div class="px-4 py-3 w-72">
-            <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+            <span class="text-gray-400 mr-3 uppercase text-xs">
+              Metallic Agarbatti(100GM)
+            </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+              Agarbaati(Pack of 5)
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹149
+                ₹875
               </p>
               <del>
-                <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
+                <p class="text-sm text-gray-600 cursor-auto ml-2">₹999</p>
               </del>
-              {
-                location === "/" ? null : <div class="ml-auto">
+              {location === "/" ? null : (
+                <div class="ml-auto">
                   <a
                     href="#"
                     className="flex justify-center px-2 py-2 text-blue-600 border border-blue-300 rounded-md hover:bg-blue-700 hover:text-gray-100 dark:hover:bg-gray-800 dark:hover:border-gray-900"
@@ -186,7 +195,7 @@ const RelatedProducts = () => {
                     Add to cart
                   </a>
                 </div>
-              }
+              )}
             </div>
           </div>
         </a>
@@ -202,19 +211,21 @@ const RelatedProducts = () => {
             class="h-72 w-72 object-cover rounded-t-xl"
           />
           <div class="px-4 py-3 w-72">
-            <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+            <span class="text-gray-400 mr-3 uppercase text-xs">
+              Metallic Agarbatti(100GM)
+            </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+              Mogra
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹149
+                ₹175
               </p>
               <del>
                 <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
               </del>
-              {
-                location === "/" ? null : <div class="ml-auto">
+              {location === "/" ? null : (
+                <div class="ml-auto">
                   <a
                     href="#"
                     className="flex justify-center px-2 py-2 text-blue-600 border border-blue-300 rounded-md hover:bg-blue-700 hover:text-gray-100 dark:hover:bg-gray-800 dark:hover:border-gray-900"
@@ -222,7 +233,7 @@ const RelatedProducts = () => {
                     Add to cart
                   </a>
                 </div>
-              }
+              )}
             </div>
           </div>
         </a>
@@ -238,19 +249,21 @@ const RelatedProducts = () => {
             class="h-72 w-72 object-cover rounded-t-xl"
           />
           <div class="px-4 py-3 w-72">
-            <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+            <span class="text-gray-400 mr-3 uppercase text-xs">
+              Metallic Agarbatti(100GM)
+            </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+              Agarbaati(Pack of 5)
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹149
+                ₹875
               </p>
               <del>
-                <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
+                <p class="text-sm text-gray-600 cursor-auto ml-2">₹999</p>
               </del>
-              {
-                location === "/" ? null : <div class="ml-auto">
+              {location === "/" ? null : (
+                <div class="ml-auto">
                   <a
                     href="#"
                     className="flex justify-center px-2 py-2 text-blue-600 border border-blue-300 rounded-md hover:bg-blue-700 hover:text-gray-100 dark:hover:bg-gray-800 dark:hover:border-gray-900"
@@ -258,7 +271,7 @@ const RelatedProducts = () => {
                     Add to cart
                   </a>
                 </div>
-              }
+              )}
             </div>
           </div>
         </a>
@@ -274,19 +287,21 @@ const RelatedProducts = () => {
             class="h-72 w-72 object-cover rounded-t-xl"
           />
           <div class="px-4 py-3 w-72">
-            <span class="text-gray-400 mr-3 uppercase text-xs">Brand</span>
+            <span class="text-gray-400 mr-3 uppercase text-xs">
+              Metallic Dhoop Cone(100GM)
+            </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+              Dhoop Cone(Pack of 5)
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹149
+                ₹875
               </p>
               <del>
-                <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
+                <p class="text-sm text-gray-600 cursor-auto ml-2">₹999</p>
               </del>
-              {
-                location === "/" ? null : <div class="ml-auto">
+              {location === "/" ? null : (
+                <div class="ml-auto">
                   <a
                     href="#"
                     className="flex justify-center px-2 py-2 text-blue-600 border border-blue-300 rounded-md hover:bg-blue-700 hover:text-gray-100 dark:hover:bg-gray-800 dark:hover:border-gray-900"
@@ -294,7 +309,7 @@ const RelatedProducts = () => {
                     Add to cart
                   </a>
                 </div>
-              }
+              )}
             </div>
           </div>
         </a>

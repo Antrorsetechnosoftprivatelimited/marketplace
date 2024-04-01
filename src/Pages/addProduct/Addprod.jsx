@@ -14,7 +14,7 @@ const AddProd = () => {
     name: "",
     productType: "",
     price: "",
-    discountPercent: "",
+    discount: "",
     stock: "",
     dimensions: {
       height: "",
@@ -147,8 +147,8 @@ const AddProd = () => {
       product,
       {
         headers: {
-          token:`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZWxsZXJfaWQiOiI2NjAzYjgyNWIzODBhOWYzNDM0YWU2NzUiLCJpYXQiOjE3MTE2MTM5NjksImV4cCI6MTcxMTg3MzE2OX0.cWPmNtrVV94SbcOufJktyxlALT2JPgolkl6RZLMW0z4`,
-            // localStorage.getItem("sellerauthToken"),
+          token:
+            localStorage.getItem("sellerauthToken"),
           "Content-Type": "multipart/form-data",
           // "Content-Type": "application/json",
         },
@@ -275,20 +275,20 @@ const AddProd = () => {
                 <div className="text-start flex flex-col">
                   <label
                     className="block text-gray-700 text-md whitespace-nowrap  mb-2"
-                    htmlFor="discountPercent"
+                    htmlFor="discount"
                   >
                     Discount Percent
                   </label>
                   <input
                     type="number"
-                    id="discountPercent"
-                    name="discountPercent"
-                    value={product.discountPercent}
+                    id="discount"
+                    name="discount"
+                    value={product.discount}
                     onChange={(e) => {
                       setProduct((prev) => {
                         return {
                           ...prev,
-                          discountPercent: Number(e.target.value),
+                          discount: Number(e.target.value),
                         };
                       });
                     }}
@@ -349,7 +349,7 @@ const AddProd = () => {
                 <div className="text-start flex flex-col">
                   <label
                     className="block text-gray-700 text-md whitespace-nowrap  mb-2"
-                    htmlFor="discountPercent"
+                    htmlFor="discount"
                   >
                     Width
                   </label>

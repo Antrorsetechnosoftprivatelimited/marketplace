@@ -3,48 +3,55 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import banner1 from '../../assets/images/product-19.png'
+import banner2 from '../../assets/images/product-16.png'
+import banner3 from '../../assets/images/product-6.jpg'
+import banner4 from '../../assets/images/product-2.jpg'
+import banner5 from '../../assets/images/product-3.jpg'
+import banner6 from '../../assets/images/product-4.jpg'
+
 
 const Category = () => {
   const categoryList = [
     {
       id: 1,
-      img: "https://media.istockphoto.com/id/1273921898/photo/young-woman-celebrating-diwali-festival-stock-photo.jpg?s=612x612&w=0&k=20&c=qk6CcNaoH3LlF2Pp4W0Bnyj9OOyILN5jnVOs7VVzDhw=",
-      title: "Women",
+      img: banner1,
+      title: "CAMPHOR DIFUSER",
     },
     {
       id: 2,
-      img: "https://images.unsplash.com/photo-1532660621034-fb55e2e59762?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Mens ",
+      img:banner2,
+      title: "METALLIC AGARBATTI ",
     },
     {
       id: 3,
-      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Shoes",
+      img: banner3,
+      title: "BHEEMSENI CAMPHOR",
     },
     {
       id: 4,
-      img: "https://images.unsplash.com/photo-1619784299133-f691ffaea42f?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Kids",
+      img:banner4,
+      title: "METALLIC DHOOP STICK ",
     },
     {
       id: 5,
-      img: "https://media.istockphoto.com/id/1273921898/photo/young-woman-celebrating-diwali-festival-stock-photo.jpg?s=612x612&w=0&k=20&c=qk6CcNaoH3LlF2Pp4W0Bnyj9OOyILN5jnVOs7VVzDhw=",
-      title: "Women",
+      img: banner5,
+      title: "METALLIC DHOOP STICK ",
     },
     {
       id: 6,
-      img: "https://images.unsplash.com/photo-1532660621034-fb55e2e59762?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Mens ",
+      img:banner6,
+      title: " METALLIC DHOOP CONE ",
     },
     {
       id: 7,
-      img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Shoes",
+      img: banner3,
+      title: "BHEEMSENI CAMPHOR",
     },
     {
       id: 8,
-      img: "https://images.unsplash.com/photo-1619784299133-f691ffaea42f?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Kids",
+      img: banner2,
+      title: "METALLIC AGARBATTI",
     },
   ];
 
@@ -89,7 +96,7 @@ const Category = () => {
                 className="rounded-md w-[12rem] bg-gray-200 object-cover h-full"
               />
             </div>
-            <h4 className="text-heading pl-4 mt-2 text-lg font-semibold capitalize">
+            <h4 className="text-heading pl-4 mt-2 text-sm font-semibold capitalize">
               {category.title}
             </h4>
           </Link>

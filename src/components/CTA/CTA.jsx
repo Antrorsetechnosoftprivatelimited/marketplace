@@ -1,6 +1,5 @@
 import React from "react";
-import image from "../../assets/images/cta-img.png"
-
+import image from "../../assets/images/cta-img.png";
 const CTA = () => {
   return (
     <div className="flex justify-center py-4 bg-slate-200 ">
@@ -8,12 +7,13 @@ const CTA = () => {
         <div className="flex flex-col overflow-hidden bg-white sm:flex-row md:h-80">
           <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
             <h2 className="text-xl font-bold text-gray-900 md:text-2xl lg:text-4xl">
-              Winter Collection
+              Dhoop Collection
             </h2>
-            <p className="mt-2 text-lg">By Luis Vuitton</p>
+            <p className="mt-2 text-lg"> SAMBRANI DHOOP CUP ( REGULAR SIZE)</p>
             <p className="mt-4 mb-8 max-w-md text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
-              iusto, cumque dolores sit odio ex.
+              Sambrani Dhoop Cups are known for their air-purifying properties,
+              making them an excellent alternative to chemical air fresheners.
+              Devi Aroma Products are free from charcoal & chemicals
             </p>
             <a
               href="#"
@@ -39,7 +39,6 @@ const CTA = () => {
               </svg>
             </a>
           </div>
-
           <div className="order-first ml-auto h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
             <img
               className="h-full w-full object-cover"
@@ -52,5 +51,4 @@ const CTA = () => {
     </div>
   );
 };
-
 export default CTA;

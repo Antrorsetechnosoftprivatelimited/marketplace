@@ -1,9 +1,9 @@
 import React from "react";
 import Ribbon from "../../utils/Ribbon/Ribbon";
-import image from "../../assets/images/product-15.png"
-import image2 from "../../assets/images/product-16.png"
-import image3 from "../../assets/images/product-19.png"
-import image4 from "../../assets/images/product-17.png"
+import image from "../../assets/images/product-15.png";
+import image2 from "../../assets/images/product-16.png";
+import image3 from "../../assets/images/product-19.png";
+import image4 from "../../assets/images/product-17.png";
 
 const FeaturedProduct = () => {
   return (
@@ -37,7 +37,7 @@ const FeaturedProduct = () => {
               <div className="">
                 <h3 className="text-xs font-semibold sm:text-sm md:text-base">
                   <a href="#" title="" className="cursor-pointer">
-                    Arabian Musk
+                    Metallic Agarbatti
                     <span className="absolute" aria-hidden="true"></span>
                   </a>
                 </h3>
@@ -103,10 +103,10 @@ const FeaturedProduct = () => {
               <div className="text-right">
                 <del className="mt-px text-xs font-semibold text-gray-600 sm:text-sm">
                   {" "}
-                  $79.00{" "}
+                  ₹200{" "}
                 </del>
                 <p className="text-xs font-normal sm:text-sm md:text-base">
-                  $99.00
+                  ₹175
                 </p>
               </div>
             </div>
@@ -126,7 +126,7 @@ const FeaturedProduct = () => {
               <div className="">
                 <h3 className="text-xs font-semibold sm:text-sm md:text-base">
                   <a href="#" title="" className="cursor-pointer">
-                    Albanian Essence
+                    Metallic Agarbatti
                     <span className="absolute" aria-hidden="true"></span>
                   </a>
                 </h3>
@@ -191,7 +191,7 @@ const FeaturedProduct = () => {
 
               <div className="text-right">
                 <p className="text-xs font-normal sm:text-sm md:text-base">
-                  $299.00
+                  ₹175.00
                 </p>
               </div>
             </div>
@@ -209,7 +209,7 @@ const FeaturedProduct = () => {
               <div className="">
                 <h3 className="text-xs font-semibold sm:text-sm md:text-base">
                   <a href="#" title="" className="cursor-pointer">
-                    Siberian Perfum
+                    Electric Camphor Difuser
                     <span className="absolute" aria-hidden="true"></span>
                   </a>
                 </h3>
@@ -274,7 +274,7 @@ const FeaturedProduct = () => {
 
               <div className="text-right">
                 <p className="text-xs font-normal sm:text-sm md:text-base">
-                  $49.00
+                  ₹499.00
                 </p>
               </div>
             </div>
@@ -292,7 +292,7 @@ const FeaturedProduct = () => {
               <div className="">
                 <h3 className="text-xs font-semibold sm:text-sm md:text-base">
                   <a href="#" title="" className="cursor-pointer">
-                    Danish Levoune
+                    Metallic Agarbatti
                     <span className="absolute" aria-hidden="true"></span>
                   </a>
                 </h3>
@@ -359,7 +359,7 @@ const FeaturedProduct = () => {
 
               <div className="text-right">
                 <p className="text-xs font-normal sm:text-sm md:text-base">
-                  $79.00
+                  ₹175.00
                 </p>
               </div>
             </div>
