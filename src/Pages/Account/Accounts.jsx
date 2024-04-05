@@ -6,8 +6,11 @@ import Help from "./Help";
 import Notifications from "./Notifications";
 import { BiCategory } from "react-icons/bi";
 
-const Accounts = () => {
-  const [activeComponent, setActiveComponent] = useState("accountSetting");
+const Accounts = ({myProp}) => {
+
+  console.log("722",myProp);
+  // const [activeComponent, setActiveComponent] = useState(myProp?myProp:"accountSetting");
+  const [activeComponent, setActiveComponent] = useState(myProp===undefined?"address":"accountSetting");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const toggleMenu = () => {

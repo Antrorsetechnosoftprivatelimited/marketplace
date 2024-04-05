@@ -5,13 +5,23 @@ import axios from "axios";
 const Address = () => {
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
-  const [street, setStreet] = useState("");
-  const [mobile, setMobile] = useState("");
+  const [landMark, setlandMark] = useState("");
+  const [phone_number, setphone_number] = useState("");
   const [country, setCountry] = useState("");
   const [pinCode, setPinCode] = useState("");
   const [type, setType] = useState("");
 
   const [address, setAddress] = useState([]);
+
+  useEffect(() => {
+    console.log("City:", city);
+    console.log("State:", state);
+    console.log("landMark:", landMark);
+    console.log("Mobile:", phone_number);
+    console.log("Country:", country);
+    console.log("Pin Code:", pinCode);
+    console.log("Type:", type);
+  }, [city, state, landMark, phone_number, country, pinCode, type]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,13 +30,14 @@ const Address = () => {
     const formData = {
       city,
       state,
-      street,
-      mobile,
+      landMark,
+      phone_number,
       country,
       pinCode,
       type,
     };
-    // console.log(formData);
+
+    console.log(formData);
 
     try {
       const response = await axios.post(
@@ -41,6 +52,7 @@ const Address = () => {
 
       // Handle success
       console.log("Form data sent successfully:", response.data);
+      fetchAddressData();
     } catch (error) {
       // Handle error
       console.error("Failed to send form data:", error);
@@ -68,15 +80,21 @@ const Address = () => {
 
   return (
     <div className="p">
-      <span>Available House address </span>
+      {address && address.length > 0 && (
+  <span>Available House address</span>
+)}
+
+    
       <div className="flex gap-2 my-4 ">
-        {address.map((add, index) => (
+        {address && address.length > 0 && address?.map((add, index) => (
+          
           <div
             key={index}
             className={` flex flex-row-reverse rounded-md items-center justify-between px-2 ring-1  cursor-pointer ring-gray-700`}
           >
+        
             <span className="font-semibold text-sm py-2 px-4">
-              {`${add.house} ${add.city} `}
+              {`${add?.landMark} ${add?.city} `}
             </span>
           </div>
         ))}
@@ -89,7 +107,7 @@ const Address = () => {
           </span>
         )} */}
       </div>
-      {address.length <= 2 ? (
+      {(
         <div className="w-full md:w-3/4 md:max-w-full mx-auto p-1">
           <h2 className="text-center text-2xl font-semibold mb-4">
             Add Address
@@ -119,9 +137,9 @@ const Address = () => {
                   />
                 </label>
                 <label className="block mb-6 w-full">
-                  <span className="text-gray-700">Mobile No</span>
+                  <span className="text-gray-700">Phone_number</span>
                   <input
-                    name="telephone"
+                    name="phone_number"
                     type="text"
                     className="
               block
@@ -137,8 +155,8 @@ const Address = () => {
               focus:ring-opacity-50
               "
                     placeholder=""
-                    value={mobile}
-                    onChange={(e) => setMobile(e.target.value)}
+                    value={phone_number}
+                    onChange={(e) => setphone_number(e.target.value)}
                   />
                 </label>
               </div>
@@ -194,9 +212,9 @@ const Address = () => {
                 </label>
               </div>
               <label className="block mb-6">
-                <span className="text-gray-700">Address </span>
+                <span className="text-gray-700">Home </span>
                 <input
-                  name="address1"
+                  name="landMark"
                   type="text"
                   className="
               block
@@ -215,8 +233,8 @@ const Address = () => {
                 
                 "
                   placeholder=" "
-                  value={street}
-                  onChange={(e) => setStreet(e.target.value)}
+                  value={landMark}
+                  onChange={(e) => setlandMark(e.target.value)}
                 />
               </label>
 
@@ -314,7 +332,7 @@ const Address = () => {
             </form>
           </div>
         </div>
-      ) : null}
+      ) }
     </div>
   );
 };
