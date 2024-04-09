@@ -82,13 +82,13 @@ const Hero = () => {
         <p className="text-sm font-sans">From Rs.125</p>
       </div>
       <div className="side-image1 bg-cover bg-center bg-no-repeat rounded-lg min-h-40 sm:p-10 hidden sm:block">
-        <h3 className="text-lg lg:text-xl font-semibold">
+        <h3 className="text-lg lg:text-lg font-semibold">
           Electric Camphor Difuser
         </h3>
         <p className="text-sm font-sans">From Rs.499</p>
       </div>
       <div className="side-image2 bg-cover bg-center bg-no-repeat rounded-lg min-h-40 sm:p-10 hidden sm:block">
-        <h3 className="text-lg lg:text-xl font-semibold ">
+        <h3 className="text-lg lg:text-lg font-semibold ">
           Metallic Agarbatti
         </h3>
         <p className="text-sm font-sans">From Rs.175</p>

@@ -10,7 +10,6 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
-
 const SubMenu = ({ items }) => (
   <ul className="absolute left-0 hidden mt-1 space-y-1 bg-white border rounded-md group-hover:block">
     {items.map((item, index) => (
@@ -26,7 +25,6 @@ const SubMenu = ({ items }) => (
     ))}
   </ul>
 );
-
 const Navbar = () => {
   const isUserLoggedIn = useSelector((state) => state.user.authorized);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +32,6 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const cartItems = useSelector((state) => state.cart.cartItems);
-
   const wishlistItems = useSelector((state) => state.wishlist.wishlistItems);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
   const trigger = useRef(null);
@@ -149,32 +146,15 @@ const Navbar = () => {
               />
             </div>
             <div className="flex items-center lg:space-x-5 sm:space-x-8  space-x-5">
-
               <IoSearch className="text-xl flex lg:hidden" />
-
               {/* <Link to="/wishlist" className="flex items-center">
                 <FaRegHeart className="text-xl" />
               </Link> */}
-
 {
                 localStorage.getItem('user') === 'true' ? (
                   <Link to="/wishlist" className="flex items-center">
-                    {/* <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      />
-                    </svg> */}
+                
                     <FaRegHeart className="text-xl" />
-
                     {wishlistItems.length <= 0 ? (
                       <span className="flex absolute -mt-5 ml-4">
                         <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
@@ -190,28 +170,12 @@ const Navbar = () => {
                   </Link>
                 ) : (
                   <Link to="/login" className="flex items-center">
-                    {/* <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      />
-                    </svg> */}
+                   
                     <FaRegHeart className="text-xl" />
                   </Link>
                 )
               }
-
               <div>
-
-
               {/* <Link to="/viewcart" className="flex items-center mr-2">
                   <FaCartShopping className="text-xl" />
                   {cartItems.length <= 0 ? (
@@ -227,22 +191,8 @@ const Navbar = () => {
                 </Link> */}
               {localStorage.getItem('user')=='true'?(
                     <Link to="/viewcart" className="flex items-center">
-                    {/* <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg> */}
+                
                    
-
                 <FaCartShopping className="text-xl" />
                     {cartItems.length <= 0 ? (
                       <span className="flex absolute -mt-5 ml-4">
@@ -256,33 +206,15 @@ const Navbar = () => {
                     )}
    
                   </Link>
-
                 ):(
                   <Link to="/login" className="flex items-center">
-                  {/* <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg> */}
+                 
                   <FaCartShopping className="text-xl" />
                 </Link>
                 )
                 }
-
-
               
               </div>
-
-
               {/* userProfile or login */}
               <div className="hidden lg:flex items-center justify-center gap-2">
                 {isUserLoggedIn ? (
@@ -318,7 +250,6 @@ const Navbar = () => {
                     login
                   </Link>
                 )}
-
                 <Link
                   to="/sellersignup"
                   className="flex justify-center text-black px-4 py-1 rounded-sm border border-black"
@@ -340,107 +271,98 @@ const Navbar = () => {
                   <span className="relative inline-flex rounded-full h-3 w-3 "></span>
                 </span>
               </a>
-
             </div>
           </div>
-
         </nav>
-
-
-
         {/* Hamburger Menu */}
         {isMenuOpen && (
           <div className="xl:hidden absolute top-20 left-0 w-full bg-white border rounded-md pb-6">
             <ul className="px-4 py-2 font-semibold font-heading space-y-2 justify-center">
               <li>
-                <a className="" href="#">
+                <Link className="" to="/" onClick={toggleMenu}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className="relative group">
-                <a href="#">Mens</a>
+                <Link to="/men" onClick={toggleMenu}>Mens</Link>
                 <ul
                   className="absolute hidden mt-2 space-y-2 bg-white border rounded-md group-hover:block z-10"
                   style={{ width: "185px" }}
                 >
                   <li>
-                    <a className="block px-4 py-1 text-gray-800" href="#">
+                    <Link to="/men/t-shirt" className="block px-4 py-1 text-gray-800" onClick={toggleMenu}>
                       T-shirt
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/men/causal-shirts" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       Causal Shirts
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/men/hoodies" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       Hoodies
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/men/formals-shirts" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       Formals shirts
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/men/uppers" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       Uppers
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/men/jackets" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       jackets
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <span className="ml-1 text-gray-500">&#9662;</span>
               </li>
               <li className="relative group">
-                <a className="" href="#">
-                  Womans
-                </a>
+                <Link to="/women" onClick={toggleMenu}>Womens</Link>
                 <ul
                   className="absolute hidden mt-2 space-y-2 bg-white border rounded-md group-hover:block"
                   style={{ width: "180px" }}
                 >
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/women/t-shirt" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       T-shirt
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/women/causal-shirts" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       Causal Shirts
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/women/hoodies" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       Hoodies
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/women/formals-shirts" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       Formals shirts
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/women/uppers" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       Uppers
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-gray-800" href="#">
+                    <Link to="/women/jackets" className="block px-4 py-2 text-gray-800" onClick={toggleMenu}>
                       jackets
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <span className="ml-1 text-gray-500">&#9662;</span>
               </li>
               <li>
-                <a className="" href="#">
-                  Trending Products
-                </a>
+                <Link to="/trending-products" onClick={toggleMenu}>Trending Products</Link>
               </li>
               <li>
                 <div className="flex items-center gap-2">
@@ -460,6 +382,7 @@ const Navbar = () => {
                     <Link
                       className=" text-black px-4 py-1  flex justify-center flex-1 h-full border  border-black rounded-sm"
                       to="/login"
+                      onClick={toggleMenu}
                     >
                       login
                     </Link>
@@ -467,7 +390,6 @@ const Navbar = () => {
                 </div>
               </li>
               <li>
-
                 <Link
                   to="/sellersignup"
                   className=" flex justify-center text-black px-4 py-1  rounded-sm  border border-black"

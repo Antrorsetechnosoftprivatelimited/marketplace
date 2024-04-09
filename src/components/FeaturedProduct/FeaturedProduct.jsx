@@ -14,8 +14,7 @@ const FeaturedProduct = () => {
             Our featured Aroma Range
           </h2>
           <p className="mt-4 text-base text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
-            faucibus massa dignissim tempus.
+          experience the pure essence of tree extracts  products without any chemicals or wax with floral herbal fragrances
           </p>
         </div>
 

@@ -142,14 +142,14 @@ const RelatedProducts = () => {
               Metallic Dhoop Cone(100GM)
             </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Dhoop Cone(Pack of 5)
+              Dhoop Cone
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹875
+                ₹175
               </p>
               <del>
-                <p class="text-sm text-gray-600 cursor-auto ml-2">₹999</p>
+                <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
               </del>
               {location === "/" ? null : (
                 <div class="ml-auto">
@@ -177,14 +177,14 @@ const RelatedProducts = () => {
               Metallic Agarbatti(100GM)
             </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Agarbaati(Pack of 5)
+              Metallic Agarbatti
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹875
+                ₹175
               </p>
               <del>
-                <p class="text-sm text-gray-600 cursor-auto ml-2">₹999</p>
+                <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
               </del>
               {location === "/" ? null : (
                 <div class="ml-auto">
@@ -253,14 +253,14 @@ const RelatedProducts = () => {
               Metallic Agarbatti(100GM)
             </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Agarbaati(Pack of 5)
+             Metallic Agarbaati
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹875
+                ₹175
               </p>
               <del>
-                <p class="text-sm text-gray-600 cursor-auto ml-2">₹999</p>
+                <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
               </del>
               {location === "/" ? null : (
                 <div class="ml-auto">
@@ -291,14 +291,14 @@ const RelatedProducts = () => {
               Metallic Dhoop Cone(100GM)
             </span>
             <p class="text-lg font-bold text-black truncate block capitalize">
-              Dhoop Cone(Pack of 5)
+              Dhoop Cone
             </p>
             <div class="flex items-center">
               <p class="text-lg font-semibold text-black cursor-auto my-3">
-                ₹875
+                ₹175
               </p>
               <del>
-                <p class="text-sm text-gray-600 cursor-auto ml-2">₹999</p>
+                <p class="text-sm text-gray-600 cursor-auto ml-2">₹199</p>
               </del>
               {location === "/" ? null : (
                 <div class="ml-auto">
