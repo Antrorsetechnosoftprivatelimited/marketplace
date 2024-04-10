@@ -302,7 +302,7 @@ const CartPage = () => {
               <span>₹{calculateSubtotal()}</span>
             </div>
             <div className="flex justify-between mb-2">
-              <span>Taxes</span>
+              <span>GST</span>
               <span>₹{tax(calculateSubtotal())}</span>
             </div>
             <div className="flex justify-between mb-2">

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { BiHide, BiShow } from "react-icons/bi";
+import axios from "axios";
 
 const AccountSettings = () => {
   const [showCurrentPassword, setShowCurrentPassword] = useState(false);
@@ -66,6 +67,34 @@ const AccountSettings = () => {
     }, 3000);
   };
 
+
+  const [result, setResult] = useState([]);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(
+        `${import.meta.env.VITE_BACKEND_URL}/app/user/getUser`,
+        {
+          headers: {
+            token: localStorage.getItem("authToken"),
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      setResult(response.data.result);
+      console.log("User data retrieved successfully:", response.data.result);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+  
+  
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+
   return (
     <div>
       <div className="flex flex-col flex-1 overflow-hidden rounded-xl sm:bg-gray-50 sm:px-8 sm:shadow">
@@ -86,12 +115,12 @@ const AccountSettings = () => {
             <input
               type="text"
               className="border-2 border-gray-300 py-2 px-4 text-base text-gray-700 placeholder-gray-400 focus:outline-none"
-              value={email}
+              value={result.email}
               onChange={(e) => setEmail(e.target.value)}
             />
           ) : (
             <p className="text-gray-600">
-              Your email address is <strong>{email}</strong>
+              Your email address is <strong>{result.email}</strong>
             </p>
           )}
           <button
@@ -121,7 +150,7 @@ const AccountSettings = () => {
             />
           ) : (
             <p className="text-gray-600">
-              Your mobile number is <strong>{mobileNumber}</strong>
+              Your mobile number is <strong>{result.mobile_number}</strong>
             </p>
           )}
           <button

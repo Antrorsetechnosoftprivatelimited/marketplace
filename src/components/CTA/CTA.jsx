@@ -16,7 +16,7 @@ const CTA = () => {
               Devi Aroma Products are free from charcoal & chemicals
             </p>
             <a
-              href="#"
+              href="/viewproducts"
               className="group mt-auto flex w-44 cursor-pointer select-none items-center justify-center rounded-md bg-black px-6 py-2 text-white transition"
             >
               <span className="group flex w-full items-center justify-center rounded py-1 text-center font-bold">

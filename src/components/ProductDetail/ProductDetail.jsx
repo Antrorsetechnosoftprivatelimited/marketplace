@@ -172,9 +172,9 @@ const ProductDetail = () => {
             <ProductDescription product={product} />
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="text-center text-4xl font-bold">Reviews</h2>
+            {/* <h2 className="text-center text-4xl font-bold">Reviews</h2> */}
             {/* Uncomment the line below if you want to display product reviews */}
-            <ProductMergeReview productReview={product} />
+            {/* <ProductMergeReview productReview={product} /> */}
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="text-center text-4xl font-bold">Similar Products</h2>

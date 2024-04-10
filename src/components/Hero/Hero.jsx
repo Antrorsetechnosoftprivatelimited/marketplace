@@ -7,7 +7,7 @@ import Image2 from "../../assets/images/bg-2.png";
 import Image3 from "../../assets/images/bg-3.png";
 // import Image4 from "../../assets/images/main-banner-5.png";
 import Image4 from "../../assets/images/bg-4.png";
-
+import {Link} from "react-router-dom"
 const ImageList = [
   {
     id: 1,
@@ -64,9 +64,11 @@ const Hero = () => {
                 <p className="text-[12px] sm:text-sm font-medium">
                   {item.description2}
                 </p>
+
+              <Link to={"/viewproducts"}>
                 <button className="bg-gradient-to-r from-red-400 to-red-600 hover:scale-105 duration-200 text-white py-2 my-4 sm:my-10 w-20 sm:w-40 rounded-full text-[12px] sm:text-sm">
                   BUY NOW
-                </button>
+                </button> </Link>
               </div>
             </div>
           ))}

@@ -2,6 +2,7 @@ import React from "react";
 import image from "../../assets/images/banner-1.png"
 import image1 from "../../assets/images/banner-3.png"
 import image2 from "../../assets/images/banner-2.png"
+import { Link } from "react-router-dom";
 
 const item = [
   {
@@ -36,10 +37,10 @@ const Banner = () => {
               <span className="font-medium pb-10">
                 Limited-time offers on top fashion items
               </span>
-
+<Link to={"/404"}>
               <button className="white-button w-1/3 p-2 border rounded-sm  transition duration-200 ease-in-out hover:bg-teal-600 hover:border-teal-600  sm:w-1/2 md:w-1/3">
                 Learn more
-              </button>
+              </button> </Link>
             </div>
           </div>
         ))}

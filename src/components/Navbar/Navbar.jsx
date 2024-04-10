@@ -39,32 +39,32 @@ const Navbar = () => {
   console.log(isUserLoggedIn);
   const mainMenu = [
     {
-      path: "/men",
-      label: "Men",
-      subMenu: [
-        { path: "/men", label: "T-shirt" },
-        { path: "/men", label: "Causal Shirts" },
-        { path: "/men", label: "Hoodies" },
-        { path: "/men", label: "Formals shirts" },
-        { path: "/men", label: "Uppers" },
-        { path: "/men", label: "jackets" },
-      ],
+      path: "/viewproducts",
+      label: "Devi Products",
+      // subMenu: [
+      //   { path: "/viewproducts", label: "T-shirt" },
+      //   { path: "/viewproducts", label: "Causal Shirts" },
+      //   { path: "/viewproducts", label: "Hoodies" },
+      //   { path: "/viewproducts", label: "Formals shirts" },
+      //   { path: "/viewproducts", label: "Uppers" },
+      //   { path: "/viewproducts", label: "jackets" },
+      // ],
     },
     {
-      path: "/women",
-      label: "Women",
-      subMenu: [
-        { path: "/women", label: "T-shirt" },
-        { path: "/women", label: "Causal Shirts" },
-        { path: "/women", label: "Hoodies" },
-        { path: "/women", label: "Formals shirts" },
-        { path: "/women", label: "Uppers" },
-        { path: "/women", label: "jackets" },
-      ],
+      path: "/viewproducts",
+      label: "Shop",
+      // subMenu: [
+      //   { path: "/women", label: "T-shirt" },
+      //   { path: "/women", label: "Causal Shirts" },
+      //   { path: "/women", label: "Hoodies" },
+      //   { path: "/women", label: "Formals shirts" },
+      //   { path: "/women", label: "Uppers" },
+      //   { path: "/women", label: "jackets" },
+      // ],
     },
     { path: "/trending-products", label: "Trending Products" },
-    { path: "/shops", label: "Shops" },
-  ];
+  //   { path: "/shops", label: "Shops" },
+   ];
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleLogout = () => {
@@ -257,7 +257,7 @@ const Navbar = () => {
                     toggleMenu(); // Close the menu when clicked
                   }}
                 >
-                  Become a seller
+                  Sell with us
                 </Link>
               </div>
               <a
@@ -284,8 +284,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="relative group">
-                <Link to="/men" onClick={toggleMenu}>Mens</Link>
-                <ul
+                <Link to="/viewproducts" onClick={toggleMenu}>Devi Products</Link>
+                {/* <ul
                   className="absolute hidden mt-2 space-y-2 bg-white border rounded-md group-hover:block z-10"
                   style={{ width: "185px" }}
                 >
@@ -319,12 +319,12 @@ const Navbar = () => {
                       jackets
                     </Link>
                   </li>
-                </ul>
-                <span className="ml-1 text-gray-500">&#9662;</span>
+                </ul> */}
+                {/* <span className="ml-1 text-gray-500">&#9662;</span> */}
               </li>
               <li className="relative group">
-                <Link to="/women" onClick={toggleMenu}>Womens</Link>
-                <ul
+                <Link to="/viewproducts" onClick={toggleMenu}>Shop</Link>
+                {/* <ul
                   className="absolute hidden mt-2 space-y-2 bg-white border rounded-md group-hover:block"
                   style={{ width: "180px" }}
                 >
@@ -358,8 +358,8 @@ const Navbar = () => {
                       jackets
                     </Link>
                   </li>
-                </ul>
-                <span className="ml-1 text-gray-500">&#9662;</span>
+                </ul> */}
+                {/* <span className="ml-1 text-gray-500">&#9662;</span> */}
               </li>
               <li>
                 <Link to="/trending-products" onClick={toggleMenu}>Trending Products</Link>
@@ -397,7 +397,7 @@ const Navbar = () => {
                     toggleMenu(); // Close the menu when clicked
                   }}
                 >
-                  Become a seller
+                  Sell with us
                 </Link>
               </li>
             </ul>
